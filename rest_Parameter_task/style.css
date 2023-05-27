@@ -1,0 +1,33 @@
+input[type="text"] {
+    width: 250px;
+    height: 25px;
+    background-color: rgb(212, 241, 255);
+    border-style: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+input[type="text"]:hover {
+    border: 2px solid rgb(209, 255, 236);
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(11, 49, 66);
+    border-style: none;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 270px;
+}
+
+#con {
+    margin-top: 30px;
+}
+
+li {
+    font-size: 30px;
+    color: cadetblue;
+}
