@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 240px;
+}
+input[type="button"]{
+    height: 30px;
+    width: 80px;
+    padding: 0;
+    background-color: rgb(252, 201, 140);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+span{
+    margin-left: 10px;
+}
+img{
+    display: none;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+#file::-webkit-file-upload-button  {
+    background-color: rgb(252, 204, 146);
+    color: white;
+    border-style: none;
+    height: 30px;
+}
+
+#head{
+width: 100%;
+height: 250px;
+background-color: antiquewhite;
+display: none;
+}
