@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Email"><input type="email" id="email" placeholder="Enter your email"></label><br>
+   <label for="Password"><input type="password" id="pswd" placeholder="Enter your password"></label> <br>
+   <button id="btn">Log in</button>
+    <script>
+        if(!localStorage.getItem("firstName")){
+            window.location.assign("reg.html")
+        }
+        let btn =  document.getElementById("btn");
+        let email = document.getElementById("email");
+        let pswd = document.getElementById("pswd")
+        console.log(email.value)
+        let Ls_email = localStorage.getItem("Email");
+        let Ls_pswd = localStorage.getItem("password");
+        btn.addEventListener("click",function login(){
+            if(email.value && pswd.value){
+                if(email.value ==Ls_email && pswd.value==Ls_pswd){
+                window.location.href = "admin.html"
+                }
+            else{
+                    alert("incorrect data")
+                }
+            }
+                else{
+                alert("please fill correct data")
+                window.location.href = "login.html"
+            }
+        
+            
+        })
+        
+    </script>
+</body>
+</html>

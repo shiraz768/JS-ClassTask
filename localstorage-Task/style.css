@@ -36,3 +36,23 @@ height: 250px;
 background-color: antiquewhite;
 display: none;
 }
+#lgout{
+    display: none;
+    height: 30px;
+    width: 80px;
+    padding: 0;
+    background-color: rgb(252, 201, 140);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+#btn{
+    
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: rgb(252, 201, 140);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-function user(){
+function registration(){
     let control =document.getElementById("control");
     let fname = document.getElementById("fname");
     let lname = document.getElementById("lname");
@@ -16,6 +16,7 @@ function user(){
     let LS_fname = localStorage.setItem("firstName",fname.value);
     let LS_lname = localStorage.setItem("LastName",lname.value);
     let LS_email = localStorage.setItem("Email", email.value);
+    let LS_pswd = localStorage.setItem("password",cnpswd.value)
     let userinfo = document.getElementById("userinfo");
     let head = document.getElementById("head");
     let photo = document.getElementById("file")
@@ -37,6 +38,12 @@ function user(){
     h1.style.color = "white"
     let h2 = document.createElement("h2");
     h2.textContent = `Dear ${fname.value} ${lname.value}! You have successfully logged in`
-    userinfo.appendChild(h2)
+    userinfo.appendChild(h2);
+    let lgout = document.getElementById("lgout");
+    lgout.style.display ="block"
     
+}
+localStorage.clear()
+function logout() {
+    window.location.href = "login.html"
 }

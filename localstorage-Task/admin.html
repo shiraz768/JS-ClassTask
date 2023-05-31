@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="head">
+        <img src="" alt="" id="profileimg" height="200px" width="200px">
+    </div>
+    <div id="userinfo">
+    </div>
+    <button id="lgout" onclick="logout()">Log Out</button>
+    <script>
+        let fname = localStorage.firstName;
+        let lname = localStorage.LastName;
+        let email = localStorage.Email;
+        let pswd = localStorage.password
+        let profileimg = document.getElementById("profileimg");
+        let userinfo = document.getElementById("userinfo");
+        let head = document.getElementById("head");
+        head.style.display = "block";
+        let h1 = document.createElement("h1");
+        h1.textContent = `${fname} ${lname}`;
+        head.appendChild(h1);
+        h1.style.textAlign = "center";
+        h1.style.color = "white"
+        let h2 = document.createElement("h2");
+        h2.textContent = `Dear ${fname} ${lname}! You have successfully logged in`
+        userinfo.appendChild(h2);
+        profileimg.style.display = "block";
+        profileimg.src = localStorage.url;
+        document.getElementById("lgout").style.display = "block"
+        function logout() {
+            window.location.href = "reg.html"
+        }
+        if (!(fname && lname && email && pswd)) {
+            window.location.assign("login.html")
+        }
+    </script>
+</body>
+
+</html>
