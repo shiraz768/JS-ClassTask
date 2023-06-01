@@ -1,0 +1,51 @@
+   { "mobiles": {
+        "Infinix":[
+            {
+                "name": "infinix note 7",
+                "brand": "infinix",
+                "price": 36000,
+                "img": "./images/note7.jpg"
+            },
+            {
+                "name": "Infinix Hot 8",
+                "brand": "infinix",
+                "price": 56000,
+                "img": "./images/note8.jpg"
+            }
+        ],
+        "Samsung": [
+            {
+                "name": "Samsung A32",
+                "brand": "Samsung",
+                "price": 76000,
+                "img": "./images/A32.jpg"
+            },
+            {
+                "name": "Samsung M31",
+                "brand": "Samsung",
+                "price": 76000,
+                "img": "./images/m31.jpg"
+            },
+            {
+                "name": "Samsung A23",
+                "brand": "Samsung",
+                "price": 46000,
+                "img": "./images/a23.jpg"
+            },
+            {
+                "name": "Samsung S21 FE",
+                "brand": "Samsung",
+                "price": 76000,
+                "img": "./images/s21.jpg"
+            }
+        ],
+       "Vivo": [
+            {
+                "name": "Vivo v20",
+                "brand": "Vivo",
+                "price": 46000,
+                "img": "./images/v20.png"
+            }
+        ]
+    }
+}
